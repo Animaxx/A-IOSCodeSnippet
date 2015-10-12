@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>a_singleton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class var sharedInstance : &lt;#className#&gt; {
+        struct privateStatic {
+            static var onceToken : dispatch_once_t = 0
+            static var instance : &lt;#className#&gt;? = nil
+        }
+        dispatch_once(&amp;privateStatic.onceToken) {
+            privateStatic.instance = &lt;#className()#&gt;
+        }
+        return privateStatic.instance!
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>89DB5E77-C6F1-4894-B163-52D534C507F8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Singleton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
