@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>a_delayExecute</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -14,9 +16,11 @@ dispatch_after(_time, dispatch_get_main_queue(), {
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6631987D-9D86-45E3-9420-D291616C07FF</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Delay to do somthing and run on main thread after that</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Delay running</string>
+	<string>Objc Delay Running</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
