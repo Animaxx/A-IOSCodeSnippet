@@ -3,31 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_singleton</string>
+	<string>a_createFromStoryboard</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class var sharedInstance : &lt;#className#&gt; {
-        struct privateStatic {
-            static var onceToken : dispatch_once_t = 0
-            static var instance : &lt;#className#&gt;? = nil
-        }
-        dispatch_once(&amp;privateStatic.onceToken) {
-            privateStatic.instance = &lt;#className#&gt;()
-        }
-        return privateStatic.instance!
+	<string>    class func create() -&gt; &lt;#controllerClass#&gt; {
+        let className = NSStringFromClass(self).componentsSeparatedByString(".").last!
+        let vc = UIStoryboard(name: "&lt;#storyboard#&gt;", bundle: nil).instantiateViewControllerWithIdentifier(className) as! &lt;#controllerClass#&gt;
+        return vc
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>89DB5E77-C6F1-4894-B163-52D534C507F8</string>
+	<string>E92B845B-EE2B-48B1-BC93-5885DD8ACCC2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create UIViewController from storyboard</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Singleton</string>
+	<string>Swift Create from storyboard</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

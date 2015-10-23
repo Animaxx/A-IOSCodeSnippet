@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>a_associateProperty</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private struct AssociatedKeys {
+        static var &lt;#assciatedKey#&gt; = "associateKey_&lt;#associate property#&gt;"
+    }
+    
+    var &lt;#associate property#&gt;: &lt;#property type#&gt;? {
+        get {
+            return objc_getAssociatedObject(self, &amp;AssociatedKeys.&lt;#assciatedKey#&gt;) as? &lt;#property type#&gt;
+        }
+        set {
+            if let newValue = newValue {
+                objc_setAssociatedObject(
+                    self, &amp;AssociatedKeys.&lt;#assciatedKey#&gt;, newValue as &lt;#property type#&gt;?, objc_AssociationPolicy&lt;#.OBJC_ASSOCIATION_RETAIN_NONATOMIC#&gt;
+                )
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D525BE07-8EDB-4FD1-9A65-A690CA95F662</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create get/set associate property in extension class</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Associate property</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

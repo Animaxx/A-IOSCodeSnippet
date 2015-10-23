@@ -16,6 +16,8 @@
 	<string>F5389978-6473-415E-A4E7-3AD6A4311EAB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create UIViewController from storyboard</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Objc Create from storyboard</string>
 	<key>IDECodeSnippetUserSnippet</key>
