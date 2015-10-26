@@ -3,25 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_createFromStoryboard</string>
+	<string>a_threadBackgound</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    class func create() -&gt; &lt;#controllerClass#&gt; {
-        let className = NSStringFromClass(self).componentsSeparatedByString(".").last!
-        let vc = UIStoryboard(name: "&lt;#storyboard#&gt;", bundle: nil).instantiateViewControllerWithIdentifier(className) as! &lt;#controllerClass#&gt;
-        return vc
-    }</string>
+	<string>        dispatch_async(&lt;#dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)#&gt;) {
+            &lt;#backgound operation#&gt;
+            dispatch_async(dispatch_get_main_queue()) {
+                &lt;#UI operation#&gt;
+            }
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E92B845B-EE2B-48B1-BC93-5885DD8ACCC2</string>
+	<string>E11A9BAD-968F-4BC3-B2CC-B4FB61C4ABA2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Create UIViewController from storyboard</string>
+	<string>Do something in backgound thread and display in UI thread</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Create from storyboard</string>
+	<string>Swift Backgound thread operation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

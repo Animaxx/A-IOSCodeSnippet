@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_createFromStoryboard</string>
+	<string>a_callSelector</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    class func create() -&gt; &lt;#controllerClass#&gt; {
-        let className = NSStringFromClass(self).componentsSeparatedByString(".").last!
-        let vc = UIStoryboard(name: "&lt;#storyboard#&gt;", bundle: nil).instantiateViewControllerWithIdentifier(className) as! &lt;#controllerClass#&gt;
-        return vc
+	<string>    if &lt;#owner#&gt;.respondsToSelector(Selector("&lt;#method signature#&gt;")) {
+        &lt;#owner#&gt;.performSelector(Selector("&lt;#method signature#&gt;"))
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E92B845B-EE2B-48B1-BC93-5885DD8ACCC2</string>
+	<string>B904AFA4-37EE-4640-8795-84A936E18F8C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Create UIViewController from storyboard</string>
+	<string>check and call a method</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Create from storyboard</string>
+	<string>Swift dynamic call selector</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

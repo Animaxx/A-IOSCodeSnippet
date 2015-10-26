@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>a_layout_fillInSuperView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    &lt;#subview#&gt;.translatesAutoresizingMaskIntoConstraints = NO;
+    [&lt;#subview#&gt;.superview addConstraint:[NSLayoutConstraint constraintWithItem:&lt;#subview#&gt; attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:&lt;#subview#&gt;.superview attribute:NSLayoutAttributeTop multiplier:1.0f constant:&lt;#0.#&gt;f]];
+    [&lt;#subview#&gt;.superview addConstraint:[NSLayoutConstraint constraintWithItem:&lt;#subview#&gt; attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:&lt;#subview#&gt;.superview attribute:NSLayoutAttributeLeft multiplier:1.0f constant:&lt;#0.#&gt;f]];
+    [&lt;#subview#&gt;.superview addConstraint:[NSLayoutConstraint constraintWithItem:&lt;#subview#&gt; attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:&lt;#subview#&gt;.superview attribute:NSLayoutAttributeRight multiplier:1.0f constant:&lt;#0.#&gt;f]];
+    [&lt;#subview#&gt;.superview addConstraint:[NSLayoutConstraint constraintWithItem:&lt;#subview#&gt; attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:&lt;#subview#&gt;.superview attribute:NSLayoutAttributeBottom multiplier:1.0f constant:&lt;#0.#&gt;f]];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1DDD8CA7-9696-4435-9558-165182A05EDB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Attached subview fill in superview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Objc Layout subview to superview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

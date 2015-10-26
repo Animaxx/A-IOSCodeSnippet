@@ -1,6 +1,6 @@
 # Usage 
 
-Copy and paste all files to Xcode code snippets folder at 
+Paste all files to Xcode code snippets folder in:
 
 `~/Library/Developer/Xcode/UserData/CodeSnippets/`
 
