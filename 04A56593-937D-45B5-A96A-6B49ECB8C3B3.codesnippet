@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>a_layout_inCenter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        &lt;#view#&gt;.translatesAutoresizingMaskIntoConstraints = false
+        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;, attribute: .CenterX , relatedBy: .Equal, toItem: &lt;#view#&gt;.superview!, attribute: .CenterX, multiplier: 1.0, constant: 0))
+        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;, attribute: .CenterY , relatedBy: .Equal, toItem: &lt;#view#&gt;.superview!, attribute: .CenterY, multiplier: 1.0, constant: 0))</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>04A56593-937D-45B5-A96A-6B49ECB8C3B3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Attached subview in the center of the superview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Layout subview in center</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

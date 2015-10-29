@@ -11,10 +11,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>        &lt;#view#&gt;.translatesAutoresizingMaskIntoConstraints = false
-        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;.superview!, attribute: .Top, relatedBy: .Equal, toItem: &lt;#view#&gt;, attribute: .Top, multiplier: 1.0, constant: 0))
-        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;.superview!, attribute: .Bottom, relatedBy: .Equal, toItem: &lt;#view#&gt;, attribute: .Bottom, multiplier: 1.0, constant: 0))
-        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;.superview!, attribute: .Left, relatedBy: .Equal, toItem: &lt;#view#&gt;, attribute: .Left, multiplier: 1.0, constant: 0))
-        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;.superview!, attribute: .Right, relatedBy: .Equal, toItem: &lt;#view#&gt;, attribute: .Right, multiplier: 1.0, constant: 0))</string>
+        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;, attribute: .Top, relatedBy: .Equal, toItem: &lt;#view#&gt;.superview!, attribute: .Top, multiplier: 1.0, constant: 0))
+        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;, attribute: .Bottom, relatedBy: .Equal, toItem: &lt;#view#&gt;.superview!, attribute: .Bottom, multiplier: 1.0, constant: 0))
+        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;, attribute: .Left, relatedBy: .Equal, toItem: &lt;#view#&gt;.superview!, attribute: .Left, multiplier: 1.0, constant: 0))
+        &lt;#view#&gt;.superview?.addConstraint(NSLayoutConstraint.init(item: &lt;#view#&gt;, attribute: .Right, relatedBy: .Equal, toItem: &lt;#view#&gt;.superview!, attribute: .Right, multiplier: 1.0, constant: 0))</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>85436D6A-C51A-4E54-9560-0BD177748F80</string>
 	<key>IDECodeSnippetLanguage</key>
