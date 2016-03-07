@@ -11,11 +11,11 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - implement UITableViewDelegate and UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return &lt;#number of section#&gt;
+    return &lt;#Number of section#&gt;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return &lt;#number of row#&gt;
+    return &lt;#Number of row#&gt;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -37,8 +37,12 @@
     return &lt;#height of header#&gt;;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return &lt;#UITableViewAutomaticDimension#&gt;;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return &lt;#height of row#&gt;;
+    return &lt;#UITableViewAutomaticDimension#&gt;;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -53,7 +57,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objc Implement Table Tiew</string>
+	<string>ObjC - Implement Table Tiew</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

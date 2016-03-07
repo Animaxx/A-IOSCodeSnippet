@@ -21,7 +21,7 @@ dispatch_after(delayTime, dispatch_get_main_queue(), {
 	<key>IDECodeSnippetSummary</key>
 	<string>Delay to execute on main thread</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Delay Running</string>
+	<string>Swift - Delay Running</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

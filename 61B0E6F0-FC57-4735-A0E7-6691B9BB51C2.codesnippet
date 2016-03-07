@@ -3,23 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_createFromStoryboard</string>
+	<string>a_singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (&lt;#Type of Controller#&gt; *)create {
-    return [[UIStoryboard storyboardWithName:@"&lt;#Storyboard name#&gt;" bundle:nil] instantiateViewControllerWithIdentifier:&lt;#NSStringFromClass([self class])#&gt;];
+	<string>+ (&lt;#Class#&gt; *)shareInstance {
+    static dispatch_once_t pred = 0;
+    __strong static &lt;#Class#&gt; *obj = nil;
+    dispatch_once(&amp;pred, ^{
+        obj = [[&lt;#Class#&gt; alloc] init];
+    });
+    
+    return obj;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F5389978-6473-415E-A4E7-3AD6A4311EAB</string>
+	<string>61B0E6F0-FC57-4735-A0E7-6691B9BB51C2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Create UIViewController from storyboard</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ObjC - Create from storyboard</string>
+	<string>ObjC - Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

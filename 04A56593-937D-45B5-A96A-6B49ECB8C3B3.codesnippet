@@ -20,10 +20,10 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>Attached subview in the center of the superview</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Layout subview in center</string>
+	<string>Swift - Layout subview in center</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
