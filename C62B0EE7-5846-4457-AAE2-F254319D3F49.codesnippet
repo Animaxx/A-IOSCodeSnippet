@@ -40,7 +40,10 @@
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
-        return &lt;#height of row#&gt;
+        return &lt;#UITableViewAutomaticDimension#&gt;
+    }
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+        return &lt;#UITableViewAutomaticDimension#&gt;
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
