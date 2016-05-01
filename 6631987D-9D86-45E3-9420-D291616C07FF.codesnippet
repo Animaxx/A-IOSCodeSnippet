@@ -10,7 +10,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>var delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(&lt;#0.5#&gt; * Double(NSEC_PER_SEC)))
+	<string>let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(&lt;#0.5#&gt; * Double(NSEC_PER_SEC)))
 dispatch_after(delayTime, dispatch_get_main_queue(), {
     &lt;#code#&gt;
 })</string>

@@ -3,18 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_threadBackgound</string>
+	<string>a_runInBackgound</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        dispatch_async(&lt;#dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)#&gt;) {
-            &lt;#backgound operation#&gt;
-            dispatch_async(dispatch_get_main_queue()) {
-                &lt;#UI operation#&gt;
-            }
-        }</string>
+	<string>dispatch_async(&lt;#dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)#&gt;) {
+        &lt;#backgound operation#&gt;
+        dispatch_async(dispatch_get_main_queue()) {
+            &lt;#UI operation#&gt;
+        }
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E11A9BAD-968F-4BC3-B2CC-B4FB61C4ABA2</string>
 	<key>IDECodeSnippetLanguage</key>
