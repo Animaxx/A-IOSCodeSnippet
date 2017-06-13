@@ -3,27 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_runInMain</string>
+	<string>a_runInBackgound</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        void(^runBlock)(void)  = ^ {
-            &lt;# Code to run #&gt;
-        };
-        if ([NSThread isMainThread]) {
-            runBlock();
-        } else {
-            dispatch_async(dispatch_get_main_queue(), runBlock);
-        }</string>
+	<string>void(^runBlock)(void)  = ^ {
+        &lt;# Code to run #&gt;
+    };
+    if (![NSThread isMainThread]) {
+        runBlock();
+    } else {
+        dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), runBlock);
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>36F03FB2-C015-487E-991B-11BBA5EFDBE7</string>
+	<string>E1038815-C8B2-4849-ADC9-DA5A9D12ACC1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Do something in backgound thread and display in UI thread</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ObjC - Run on main with check</string>
+	<string>ObjC - Backgound thread operation</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

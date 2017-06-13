@@ -3,25 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_createFromStoryboard</string>
+	<string>a_alert</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    class func create() -&gt; &lt;#controllerClass#&gt; {
-        let className = NSStringFromClass(self).components(separatedBy: ".").last!
-        let vc = UIStoryboard(name: "&lt;#storyboard#&gt;", bundle: nil).instantiateViewController(withIdentifier: className) as! &lt;#controllerClass#&gt;
-        return vc
-    }</string>
+	<string>                let alertController = UIAlertController(title: "&lt;#title#&gt;", message: "&lt;#message#&gt;", preferredStyle: .Alert)
+                let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                }
+                alertController.addAction(OKAction)
+                self.presentViewController(alertController, animated: true, completion: nil)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E92B845B-EE2B-48B1-BC93-5885DD8ACCC2</string>
+	<string>F27A0E93-E3B1-4207-B96E-C79509F3398A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>Create UIViewController from storyboard</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - Create from storyboard</string>
+	<string>Swift - alert</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

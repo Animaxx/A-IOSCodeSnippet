@@ -3,27 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_runInMain</string>
+	<string>a_runInMain_3</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        void(^runBlock)(void)  = ^ {
+	<string>        let runBlock = {() -&gt; Void in
             &lt;# Code to run #&gt;
-        };
-        if ([NSThread isMainThread]) {
-            runBlock();
-        } else {
-            dispatch_async(dispatch_get_main_queue(), runBlock);
-        }</string>
+        }
+        if Thread.isMainThread { runBlock() }
+        else { DispatchQueue.main.async(execute:runBlock) }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>36F03FB2-C015-487E-991B-11BBA5EFDBE7</string>
+	<string>75E43232-DB95-4831-8F05-8FB7D084F180</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ObjC - Run on main with check</string>
+	<string>Swift 3 - Run on main with check</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

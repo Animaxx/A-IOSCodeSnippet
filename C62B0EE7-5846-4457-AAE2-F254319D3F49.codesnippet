@@ -9,51 +9,50 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: Implement UITableViewDelegate and UITableViewDataSource
-    func numberOfSectionsInTableView(tableView: UITableView) -&gt; Int {
+	<string>    // MARK: Implement UITableViewDelegate and UITableViewDataSource
+    func numberOfSections(in tableView: UITableView) -&gt; Int {
         return &lt;#number of section#&gt;
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
         return &lt;#number of row#&gt;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&gt; UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("&lt;#cell#&gt;")
-        if (!cell) {
-            let className = &lt;#NSStringFromClass(self).componentsSeparatedByString(".").last!#&gt;
-            let topLevelObjects = NSBundle.mainBundle().loadNibNamed(className, owner: self, options: nil)
-            cell = topLevelObjects[0] as! UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "&lt;#cell#&gt;")
+        if (cell != nil) {
+            let className = NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
+            let topLevelObjects = Bundle.main.loadNibNamed(className, owner: self, options: nil)
+            cell = topLevelObjects![0] as? UITableViewCell
         }
         
-        return cell
+        return cell!
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -&gt; UIView? {
         let view = UIView()
         return view
     }
     
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
         return &lt;#height of header#&gt;
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
         return &lt;#UITableViewAutomaticDimension#&gt;
     }
-    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -&gt; CGFloat {
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -&gt; CGFloat {
         return &lt;#UITableViewAutomaticDimension#&gt;
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-    }
-</string>
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C62B0EE7-5846-4457-AAE2-F254319D3F49</string>
 	<key>IDECodeSnippetLanguage</key>

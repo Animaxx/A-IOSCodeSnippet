@@ -6,6 +6,7 @@
 	<string>a_singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -23,6 +24,8 @@
 	<string>89DB5E77-C6F1-4894-B163-52D534C507F8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>a_singleton</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Swift - Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>

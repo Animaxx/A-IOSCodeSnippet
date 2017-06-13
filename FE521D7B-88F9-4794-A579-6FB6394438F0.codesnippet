@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_createFromStoryboard</string>
+	<string>a_delayExecute_3</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    class func create() -&gt; &lt;#controllerClass#&gt; {
-        let className = NSStringFromClass(self).components(separatedBy: ".").last!
-        let vc = UIStoryboard(name: "&lt;#storyboard#&gt;", bundle: nil).instantiateViewController(withIdentifier: className) as! &lt;#controllerClass#&gt;
-        return vc
-    }</string>
+	<string>DispatchQueue.main.asyncAfter(deadline: .now() + &lt;#0.5#&gt;) {
+            &lt;#code#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E92B845B-EE2B-48B1-BC93-5885DD8ACCC2</string>
+	<string>FE521D7B-88F9-4794-A579-6FB6394438F0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Create UIViewController from storyboard</string>
+	<string>Delay to execute on main thread</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - Create from storyboard</string>
+	<string>Swift 3 - Delay Running</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

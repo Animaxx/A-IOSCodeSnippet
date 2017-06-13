@@ -6,6 +6,7 @@
 	<string>a_runInMain</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
+		<string>CodeExpression</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
@@ -16,14 +17,14 @@
             runBlock()
         }
         else {
-            dispatch_sync(dispatch_get_main_queue(), runBlock)
+            dispatch_async(dispatch_get_main_queue(), runBlock)
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BC0F3B89-6509-4574-AB04-00987FDB98DD</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - Run in main with check</string>
+	<string>Swift - Run on main with check</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
