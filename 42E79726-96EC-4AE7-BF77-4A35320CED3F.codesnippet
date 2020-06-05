@@ -3,25 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_delayExecute</string>
+	<string>a_runInBackgound</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(&lt;#0.5#&gt; * Double(NSEC_PER_SEC)))
-dispatch_after(delayTime, dispatch_get_main_queue(), {
-    &lt;#code#&gt;
-})</string>
+	<string>let runBlock = {() -&gt; Void in
+    &lt;# Code to run #&gt;
+}
+if !Thread.isMainThread { runBlock() }
+else { DispatchQueue.global().async(execute:runBlock) }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6631987D-9D86-45E3-9420-D291616C07FF</string>
+	<string>42E79726-96EC-4AE7-BF77-4A35320CED3F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Delay to execute on main thread</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - Delay Running</string>
+	<string>Swift - Run in background with check</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

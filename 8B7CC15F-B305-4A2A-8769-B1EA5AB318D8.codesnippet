@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_singleton_3</string>
+	<string>a_singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    private override init() { }
-    static let sharedInstance:&lt;#className#&gt; = {
+    static let shared:&lt;#className#&gt; = {
         let instance = &lt;#className#&gt;()
         return instance
     }()</string>
@@ -21,7 +21,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>a_singleton</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift 3- Singleton</string>
+	<string>Swift - Singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

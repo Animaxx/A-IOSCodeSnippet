@@ -3,31 +3,39 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_singleton</string>
+	<string>a_orinentation_portraitOnly</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>class var sharedInstance : &lt;#className#&gt; {
-        struct privateStatic {
-            static var onceToken : dispatch_once_t = 0
-            static var instance : &lt;#className#&gt;? = nil
+	<string>// portrait-only
+    override var shouldAutorotate: Bool {
+        get {
+            return false
         }
-        dispatch_once(&amp;privateStatic.onceToken) {
-            privateStatic.instance = &lt;#className#&gt;()
+    }
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        get {
+            return .portrait
         }
-        return privateStatic.instance!
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            return .portrait
+        }
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>89DB5E77-C6F1-4894-B163-52D534C507F8</string>
+	<string>40BF0C2F-4A86-4E99-8471-175C745A636B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>a_singleton</string>
+	<string>Set UIViewController to Portait only</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift - Singleton</string>
+	<string>Swift - Portrait Only</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

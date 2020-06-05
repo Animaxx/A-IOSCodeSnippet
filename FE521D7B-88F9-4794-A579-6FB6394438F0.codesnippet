@@ -3,16 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>a_delayExecute_3</string>
+	<string>a_delayExecute</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
 		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>DispatchQueue.main.asyncAfter(deadline: .now() + &lt;#0.5#&gt;) {
-            &lt;#code#&gt;
-        }</string>
+    &lt;#code#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FE521D7B-88F9-4794-A579-6FB6394438F0</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -20,7 +21,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>Delay to execute on main thread</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift 3 - Delay Running</string>
+	<string>Swift - Delay Running in Main</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
